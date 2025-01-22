@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/logo.png">
+  </head>
+  <body>
+    <!-- Go To Top Button -->
+    <button onclick="topFunction()" id="topBtn">
+      <i class="fa-solid fa-angle-up fa-lg"></i>
+    </button>
+
+    <!-- Header & Navbar -->
+    <header id="header">
+      <a href="home.html"><img src="img/logo.png" class="logo" /></a>
+      <nav>
+        <ul id="navbar">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="product.html">Product</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a class="active" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section id="page-header">
+      <h2>My Cart</h2>
+      <p>Checkout your items and apply coupon</p>
+    </section>
+
+    <!-- Cart -->
+    <section id="cart" class="section-p1">
+      <table width="100%">
+        <thead>
+          <tr>
+            <td>Remove</td>
+            <td>Image</td>
+            <td>Products</td>
+            <td>Price</td>
+            <td>Quantity</td>
+            <td>Subtotal</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="#"><i class="fa-regular fa-circle-xmark"></i></a></td>
+            <td><img src="img/pro-1.jpg" /></td>
+            <td>Shanghai T-Shirts</td>
+            <td>$53.00</td>
+            <td><input type="number" value="1" /></td>
+            <td>$53.00</td>
+          </tr>
+          <tr>
+            <td><a href="#"><i class="fa-regular fa-circle-xmark"></i></a></td>
+            <td><img src="img/pro-3.jpg" alt="" /></td>
+            <td>Camo Type Shirts</td>
+            <td>$66.00</td>
+            <td><input type="number" value="1" /></td>
+            <td>$66.00</td>
+          </tr>
+          <tr>
+            <td><a href="#"><i class="fa-regular fa-circle-xmark"></i></a></td>
+            <td><img src="img/pro-5.jpg" alt="" /></td>
+            <td>Abstract Shirts</td>
+            <td>$39.00</td>
+            <td><input type="number" value="1" /></td>
+            <td>$39.00</td>
+          </tr>
+          <tr>
+            <td><a href="#"><i class="fa-regular fa-circle-xmark"></i></a></td>
+            <td><img src="img/pro-7.jpg" alt="" /></td>
+            <td>Casual Shirts</td>
+            <td>$61.00</td>
+            <td><input type="number" value="1" /></td>
+            <td>$61.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Cart Add -->
+    <section id="cart-add" class="section-p1">
+      <div id="coupon">
+        <h3>Apply Coupon</h3>
+        <div>
+          <input type="text" placeholder="Enter your coupon" />
+          <button class="normal">Apply</button>
+        </div>
+      </div>
+
+      <div id="subtotal">
+        <h3>Cart Total</h3>
+        <table>
+          <tr>
+            <td>Cart Subtotal</td>
+            <td>$219.00</td>
+          </tr>
+          <tr>
+            <td>Shipping</td>
+            <td>$31.00</td>
+          </tr>
+          <tr>
+            <td><strong>Total</strong></td>
+            <td><strong>$250.00</strong></td>
+          </tr>
+        </table>
+        <button class="normal">Checkout</button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section-p1">
+      <div class="col">
+        <img src="img/logo.png" class="logo" />
+        <h4>Contact</h4>
+        <p><strong>Address:</strong> Denpasar, Bali</p>
+        <p><strong>Phone:</strong> 08986635190</p>
+        <p><strong>Hours:</strong> 10:00 - 20:00, Mon - Fri</p>
+
+        <div class="follow">
+          <h4>Follow Us</h4>
+          <div class="icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-pinterest"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <h4>About</h4>
+        <a href="#">About Us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Contact Us</a>
+      </div>
+
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">Wishlist</a>
+        <a href="#">Track Order</a>
+        <a href="#">View Cart</a>
+        <a href="#">Help</a>
+      </div>
+
+      <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+          <img src="img/app-store.jpg" alt="" />
+          <img src="img/google-play.jpg" alt="" />
+        </div>
+        <p>Secured Payment Gateways</p>
+        <img src="img/payment.png" alt="" />
+      </div>
+
+      <div class="copyright">
+        <p>&copy; 2025, Nitai Rama - Product View Website</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
